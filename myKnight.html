@@ -1,0 +1,87 @@
+﻿<html>
+<head>
+<meta charset="UTF-8" />
+<title>mabinogi</title>
+<SCRIPT language=JavaScript src="myKnight.js"></SCRIPT>
+</head>
+<body >
+<a href = "main.html">back</a><br/>
+<h1>我的騎士團好感計算機</h1> <p ID= 1>by 江琴</p>
+
+角色　　　　編號
+<form name="myform" onsubmit="return false">
+<select name="character" onclick="">
+　<option value="Alease">愛樂莉絲</option>
+　<option value="Ershi">艾希</option>
+  <option value="Dai">戴伊</option>
+  <option value="Kaoru">寇爾</option>
+</select>
+<input id ="test" name="cost" type="text" value="1">
+<input type="button" value="計算" onclick=calc()>
+<br/><br/><br/>
+<div id=ref1 style="font-size:20px"></div>
+<br/><br/>
+編號預測:<br/>
+<select name="character2" onclick="">
+　<option value="Alease">愛樂莉絲</option>
+　<option value="Ershi">艾希</option>
+  <option value="Dai">戴伊</option>
+  <option value="Kaoru">寇爾</option>
+</select><br/>
+　選填1~5項提升好感度的關鍵字<br/>
+1 
+<select name="a1" onclick="">
+　<option value="0">  </option>
+　<option value="1">任務</option>
+　<option value="2">修練</option>
+  <option value="3">遊戲</option>
+  <option value="4">食物</option>
+  <option value="5">時尚</option>
+  <option value="6">戀愛</option>
+</select>
+<br/>
+2 <select name="a2" onclick="">
+　<option value="0">  </option>
+　<option value="1">任務</option>
+　<option value="2">修練</option>
+  <option value="3">遊戲</option>
+  <option value="4">食物</option>
+  <option value="5">時尚</option>
+  <option value="6">戀愛</option>
+</select>
+<br/>
+3 <select name="a3" onclick="">
+　<option value="0">  </option>
+　<option value="1">任務</option>
+　<option value="2">修練</option>
+  <option value="3">遊戲</option>
+  <option value="4">食物</option>
+  <option value="5">時尚</option>
+  <option value="6">戀愛</option>
+</select><br/>
+4 <select name="a4" onclick="">
+　<option value="0">  </option>
+　<option value="1">任務</option>
+　<option value="2">修練</option>
+  <option value="3">遊戲</option>
+  <option value="4">食物</option>
+  <option value="5">時尚</option>
+  <option value="6">戀愛</option>
+</select><br/>
+5 <select name="a5" onclick="">
+　<option value="0">  </option>
+　<option value="1">任務</option>
+　<option value="2">修練</option>
+  <option value="3">遊戲</option>
+  <option value="4">食物</option>
+  <option value="5">時尚</option>
+  <option value="6">戀愛</option>
+</select>
+<br/>
+<input type="button" value="計算" onclick="calc2()">
+<div id=ref2 style="font-size:20px"></div>
+
+</form>
+
+</body>
+</html>

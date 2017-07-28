@@ -1,0 +1,84 @@
+﻿<html>
+<head>
+<meta charset="UTF-8" />
+<title>mabinogi</title>
+<SCRIPT language=JavaScript src="trade.js"></SCRIPT>
+
+  <style type = "text/css">
+  .IE{
+    color: red;
+  }
+  .err{
+    color: blue;
+  }
+  </style>
+</head>
+<body >
+<a href = "main.html">back</a><br/>
+<h1>貿易計算機 </h1> <p ID= 1>by 江琴</p>
+
+<form name="calc3">
+    出發地點：
+    <select name="city" onclick = "listitem()">
+        <option value="提村" >提村</option>
+        <option value="杜巴">杜巴</option>
+        <option value="班克">班克</option>
+        <option value="艾明">艾明</option>
+        <option value="塔丁">塔丁</option>
+        <option value="塔拉">塔拉</option>
+        <option value="卡普">卡普</option>
+        <option value="貝島">貝島</option>
+    </select>
+    <br/>
+    <div id=itemname0>商品：<br/></div>價格：<input name="item0" type="text" value="0"/> <br/>
+    <div id=itemname1>商品：<br/></div>價格：<input name="item1" type="text" value="0"/> <br/>
+    <div id=itemname2>商品：<br/></div>價格：<input name="item2" type="text" value="0"/> <br/>
+    <div id=itemname3>商品：<br/></div>價格：<input name="item3" type="text" value="0"/> <br/>
+    <div id=itemname4>商品：<br/></div>價格：<input name="item4" type="text" value="0"/> <br/>
+    夥伴：<br/>
+    <input type="radio" name="partner" value="no" checked="checked" onclick="mycalc()"/>無
+    <input type="radio" name="partner" value="partner" onclick="mycalc()"/>貿易女僕
+    <input type="radio" name="partner" value="alpaca" onclick="mycalc()"/>羊駝
+    <br/>種類：<br/>                                                                                 
+    <input type="radio" name="vehicles" value="elephant" checked="checked" onclick="mycalc()"/>大象 
+    <input type="radio" name="vehicles" value="horse" onclick="mycalc()"/>馬車
+    <input type="radio" name="vehicles" value="car" onclick="mycalc()"/>購物車
+    <input type="radio" name="vehicles" value="bag" onclick="mycalc()"/>背包客
+    <input type="radio" name="vehicles" value="user" /> 自訂
+    <br/>
+    負重
+    <input type="text" name="Uweight" value="1000" />
+    格數
+    <input type="text" name="Ubox" value="0" />
+    <br/>
+    <input type="button" value="計算" onclick="mycalc()"/> 
+    <div id=answer>
+    商品：<br/>
+    數量：<br/>
+    </div>
+</form>
+
+
+<form name="calcMinNum">
+    修練計算<br/>
+    價差<input name="X" type="text" value="25"> 
+    R幾 <input name="R" type="text" value="1">
+    活動加成 <input name="B" type="text" value="30">%
+    <br/><input type="button" value="計算" onclick="exp_calc()"/> 
+    <div id=ref1></div>
+</form>
+
+相關連結:
+<a target="_blank" href = "http://mabinogi.fws.tw/how_sys_commerce.php">奇幻 貿易說明</a>
+
+<!--<p class = "err">目前使用<span  class = "IE">IE</span>應該沒有問題吧</p>  -->
+   
+
+
+
+
+
+</body>
+</html>
+
+

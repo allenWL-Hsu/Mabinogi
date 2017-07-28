@@ -1,0 +1,36 @@
+﻿<html>
+<head>
+	<title>惡魔材料計算機</title>
+	<SCRIPT language=JavaScript charset="UTF-8" src="Demonic.js"></SCRIPT>
+	<meta charset=utf-8>
+</head>
+<body>
+	<a href = "main.html">back</a><br/>
+	<h1>惡魔材料計算機</h1> <p ID= 1>by 江琴</p>
+
+	<form name="myform" onclick="" onsubmit="return false">
+		成品
+		<select name="product" onclick="">
+		　<option value="惡魔琴">惡魔琴</option>
+		　<option value="惡魔手把">惡魔手把</option>
+		　<option value="惡魔弓">惡魔弓</option>
+		　<option value="惡魔捕夢者">惡魔捕夢者</option>
+		　<option value="惡魔集魔杖">惡魔集魔杖</option>
+		</select>
+		<br/>
+		(惡魔木板)木工成功率: 
+		<input name = "木工機率" style = "text" value = "60" size = 3 ></input>%
+		</br>
+		(惡魔之塊)冶煉成功率:
+		<input name = "冶煉機率" style = "text" value = "60" size = 3 ></input>%
+		</br>
+		(惡魔鱗片)手工成功率:
+		<input name = "手工藝機率" style = "text" value = "60" size = 3 ></input>%
+		<br/>
+		<input type="button" value="計算" onclick=calc()>
+		<br/>
+		<div id=ref1 style="font-size:16px"></div>
+		<br/>
+	</form>
+</body>
+</html>

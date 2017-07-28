@@ -1,0 +1,126 @@
+﻿<html>
+<head>
+<meta charset="UTF-8" />
+<title>mabinogi</title>
+<SCRIPT language=JavaScript src="train.js"></SCRIPT>
+<style type="text/css">
+	table.tableizer-table {
+		margin-right:20%;
+        font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+        
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+	}
+</style>
+</head>
+<body >
+<a href = "main.html">back</a><br/>
+<h1>訓練所計算機</h1> <p ID= 1>by 江琴</p>
+<table class="tableizer-table" align = "right">
+    <thead><tr class="tableizer-firstrow"><th>成員</th><th>怪物</th></tr></thead>
+    <tbody>
+        <tr><td>A1</td><td>B0</td></tr>
+        <tr><td>生命值70%</td><td>智力120%</td></tr>
+        <tr><td>生命值回復速度70%</td><td>幸運120%</td></tr>
+        <tr><td>魔力值回復速度70%</td><td>攻擊力150%</td></tr>
+        <tr><td>耐力值回復速度70%</td><td>生命值150%</td></tr>
+        <tr><td>暴擊率70%</td><td>防禦110%</td></tr>
+        <tr><td>近戰攻擊70%</td><td>保護110%</td></tr>
+        <tr><td>詠唱速度70%</td><td>B1</td></tr>
+        <tr><td>瞄準速度70%</td><td>智力150%</td></tr>
+        <tr><td>A2</td><td>幸運150%</td></tr>
+        <tr><td>傷害70%</td><td>防禦120%</td></tr>
+        <tr><td>生命值回復速度50%</td><td>B2</td></tr>
+        <tr><td>魔力值回復速度50%</td><td>智力200%</td></tr>
+        <tr><td>耐力值回復速度50%</td><td>幸運200%</td></tr>
+        <tr><td>暴擊率50%</td><td>防禦150%</td></tr>
+        <tr><td>近戰攻擊50%</td><td>登場數 150%</td></tr>
+        <tr><td>詠唱速度50%</td><td>B3</td></tr>
+        <tr><td>瞄準速度50%</td><td>保護150%</td></tr>
+        <tr><td>A3</td><td>攻擊力300%</td></tr>
+        <tr><td>生命值50%</td><td>生命值300%</td></tr>
+        <tr><td>A4</td><td>B4</td></tr>
+        <tr><td>傷害50%</td><td>登場數 200%</td></tr>
+        <tr><td>&nbsp;</td><td>B5</td></tr>
+        <tr><td>&nbsp;</td><td>生命值500%</td></tr>
+        <tr><td>&nbsp;</td><td>攻擊力500%</td></tr>
+    </tbody>
+</table>
+獎勵等級計算
+<form name="myform2" onclick="">
+    <select name="diffcult" onclick="">
+        <option value="0">普</option>
+        <option value="40">中</option>　
+        <option value="70">高</option>
+        <option value="100">最高一般</option>
+        <option value="130" selected="selected">最高中</option>
+    </select>
+    <select name="member" onclick="">
+        <option value="0">3人</option>
+        <option value="0">4人</option>　
+        <option value="0">6人</option>
+        <option value="-30" selected="selected">8人</option>
+    </select>
+    <select name="stoneA" onclick="">
+        <option value="-1 selected="selected">空</option>
+        <option value="1">A1</option>　
+        <option value="2">A2</option>
+        <option value="3">A3</option>
+        <option value="4">A4</option>
+    </select>
+    <select name="stoneB" onclick="">
+        <option value="-1" selected="selected">空</option>
+        <option value="0">B0</option>　
+        <option value="1">B1</option>　
+        <option value="2">B2</option>
+        <option value="3">B3</option>
+        <option value="4">B4</option>
+        <option value="5">B5</option>
+    </select>
+    <input type="button" value="計算" onclick=calc2()>
+    <div id=ref2 style="font-size:20px"></div>
+</form>
+
+需要訓練石計算
+<form name="myform" onclick="">
+    <select name="diffcult" onclick="">
+        <option value="0">普</option>
+        <option value="40">中</option>　
+        <option value="70">高</option>
+        <option value="100">最高一般</option>
+        <option value="130" selected="selected">最高中</option>
+    </select>
+    <select name="member" onclick="">
+        <option value="0">3人</option>
+        <option value="0">4人</option>　
+        <option value="0">6人</option>
+        <option value="-30" selected="selected">8人</option>
+    </select>
+    <select name="level" onclick="">
+        <option value="0">C</option>
+        <option value="1">B</option>　
+        <option value="2">A</option>
+        <option value="3">S</option>
+        <option value="4" selected="selected">SS</option>
+    </select>
+    <input type="button" value="計算" onclick=calc()>
+    
+    
+    <br/><br/><br/>
+    <div id=ref1 style="font-size:20px"></div>
+    <br/>
+</form>
+
+
+</body>
+</html>
