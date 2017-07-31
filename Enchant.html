@@ -9,53 +9,54 @@
 <h1>魔力賦予計算機 </h1> <p ID= 1>by 江琴</p>
 <form name="Enchantform">
 
-<input type="radio" name="wood">普通木柴
-<input type="radio" name="wood">中級木柴
-<input type="radio" name="wood">高級木柴
-<input type="radio" name="wood" checked="checked">優質木柴
-<input type="radio" name="wood">特級木柴
-</br>
-魔附等級 
-<select name="enchant" onclick="">
-　<option value=1>1</option>　<option value=2>2</option>  <option value=3>3</option>
-　<option value=4>4</option>　<option value=5>5</option>  <option value=6>6</option>
-　<option value=7>7</option>　<option value=8>8</option>  <option value=9>9</option>
-　<option value=10>A</option>　<option value=11>B</option>  <option value=12>C</option>
-　<option value=13>D</option>　<option value=14>E</option>  <option value=15>F</option>
-</select>
-營火等級 
-<select name="burn" onclick="">
-　<option value=1>1</option>　<option value=2>2</option>  <option value=3>3</option>
-　<option value=4>4</option>　<option value=5>5</option>  <option value=6>6</option>
-　<option value=7>7</option>　<option value=8 selected='selected'>8</option>  <option value=9>9</option>
-　<option value=10>A</option>　<option value=11>B</option>  <option value=12>C</option>
-　<option value=13>D</option>　<option value=14>E</option>  <option value=15>F</option>
-</select>
+	木柴
+	<select name="wood" onclick="">
+	　<option value=1 > 普通木柴 </option>
+	　<option value=2> 中級木柴 </option>
+	<option value=3> 高級木柴 </option>
+	<option value=4 selected> 優質木柴 </option>
+	<option value=5> 特級木柴 </option>
+	</select>
+	</br>
+	魔附等級 
+	<select name="enchant" onclick="">
+	　<option value=1>1</option>　<option value=2>2</option>  <option value=3>3</option>
+	　<option value=4>4</option>　<option value=5>5</option>  <option value=6>6</option>
+	　<option value=7>7</option>　<option value=8>8</option>  <option value=9>9</option>
+	　<option value=10>A</option>　<option value=11>B</option>  <option value=12>C</option>
+	　<option value=13>D</option>　<option value=14>E</option>  <option value=15>F</option>
+	</select>
+	營火等級 
+	<select name="burn" onclick="">
+	　<option value=1>1</option>　<option value=2>2</option>  <option value=3>3</option>
+	　<option value=4>4</option>　<option value=5>5</option>  <option value=6>6</option>
+	　<option value=7>7</option>　<option value=8 selected='selected'>8</option>  <option value=9>9</option>
+	　<option value=10>A</option>　<option value=11>B</option>  <option value=12>C</option>
+	　<option value=13>D</option>　<option value=14>E</option>  <option value=15>F</option>
+	</select>
 
-<input type="button" value = "開始燒" onclick = calc() ><br/>
-燒捲率 <input type="type" name="fire" value=100 size = 5>%<br/>
-<br/><br/>
-卷軸等級
-<select name="scroll" onclick="">
-  <option value=2>2</option>  <option value=3>3</option>
-　<option value=4>4</option>　<option value=5>5</option>  <option value=6>6</option>
-　<option value=7>7</option>　<option value=8>8</option>  <option value=9>9</option>
-　<option value=10>A</option>　<option value=11>B</option>  <option value=12>C</option>
-　<option value=13>D</option>　<option value=14>E</option>  <option value=15>F</option>
-</select>
-<input type="checkbox" name="four" value="NO" onclick>星期四
-<br/>
-
-<input type="radio" name="powder" value="0">
-魔法粉/聖魔法粉　
-<input type="radio" name="powder" value="1" checked="checked">
-精煉魔法粉　
-<input type="radio" name="powder" value="2">
-精靈魔法粉　 
-<input type="radio" name="powder" value="3" >
-古代魔法粉　
-<input type="button" value = "計算" onclick = calc2()><br/>
-炸 <input type="type" name="n" value="10"  size = '6' >次
+	<input type="button" value = "開始燒" onclick = calc() /><br/>
+	<div id=ref2></div>
+	<br/><br/>
+	卷軸等級
+	<select name="scroll" onclick="">
+	<option value=2>2</option>  <option value=3>3</option>
+	　<option value=4>4</option>　<option value=5>5</option>  <option value=6>6</option>
+	　<option value=7>7</option>　<option value=8>8</option>  <option value=9>9</option>
+	　<option value=10>A</option>　<option value=11>B</option>  <option value=12>C</option>
+	　<option value=13>D</option>　<option value=14>E</option>  <option value=15>F</option>
+	</select>
+	<input type="checkbox" name="four" value="NO" onclick>星期四
+	<br/>
+	魔法粉
+	<select name="powder" onclick="">
+	　<option value=0 > 聖魔法粉 </option>
+	　<option value=1> 精煉魔法粉 </option>
+	<option value=2> 精靈魔法粉 </option>
+	<option value=3 selected> 古代魔法粉 </option>	
+	</select>	
+	<input type="button" value = "計算" onclick = calc2()><br/>
+	炸 <input type="type" name="n" value="10"  size = '6' >次
 </form>
 <div id=ref1></div></p>
 </body>

@@ -5,18 +5,9 @@ function calc(){
     var  en=Enchantform.enchant.value;
     var  bb=Enchantform.burn.value;
     var  ss=Enchantform.scroll.value;
-    var  temp  = wood(en,whichwood())+ ER(en)*fire(bb);
-    
-    Enchantform.fire.value = temp;
+    var  temp  = wood(en,Enchantform.wood.value)+ ER(en)*fire(bb);
+    ref2.innerHTML = "燒捲率: "+temp+"%<br/>";
 }
-
-function whichwood(){
-    if(Enchantform.wood[0].checked) return 1;
-    if(Enchantform.wood[1].checked) return 2;
-    if(Enchantform.wood[2].checked) return 3;
-    if(Enchantform.wood[3].checked) return 4;
-	if(Enchantform.wood[4].checked) return 5;
-   }
 
 function fire(a){
     return camp_fire[16-HtoD(a)];
@@ -86,29 +77,15 @@ function calc2(){
     }else{
         four = 0;
     }
-    var temp;
-    if(Enchantform.powder[0].checked){
-        temp = EP(four,16-HtoD(Enchantform.scroll.value),0);
-    }else
-    if(Enchantform.powder[1].checked){
-        temp = EP(four,16-HtoD(Enchantform.scroll.value),1);
-    }else
-    if(Enchantform.powder[2].checked){
-        temp = EP(four,16-HtoD(Enchantform.scroll.value),2);
-    }else
-    if(Enchantform.powder[3].checked){
-        temp = EP(four,16-HtoD(Enchantform.scroll.value),3);
-    }
-    var times=[0,2 ,2 ,2 ,3 ,3 ,4 ,5 ,6 ,6 ,7 ,9 ,11, 13, 15, 21];
+    temp = EP(four,16-HtoD(Enchantform.scroll.value),Enchantform.powder.value);
     
-    //Enchantform.ans.value = temp;
-    //ref1.innerHTML = "<font color = red>以下測試中</font><br\>"+"1次過 " + temp + "%";
+    
+    
     ref1.innerHTML = "1次過 " + temp + "%";
     temp=(100-temp)/100;
     var ans = temp;
     
     var n = Enchantform.n.value;
-    //n=times[16-HtoD(Enchantform.enchant.value)];
     
     if(n>20)n=20;
     Enchantform.n.value=n;
