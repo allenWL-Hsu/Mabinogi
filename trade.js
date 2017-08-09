@@ -107,6 +107,10 @@ function checkvehicles(){
     else if(calc3.vehicles[1].checked){
         weight = 900;
         count = 8;
+        if(calc3.alpaca.checked){
+            weight = 1100;
+            count = 10;
+        }
     }else if(calc3.vehicles[2].checked){
         weight = 800;
         count = 6;
@@ -114,13 +118,13 @@ function checkvehicles(){
         weight = 400;
         count = 4;
     }
-    if(calc3.partner[1].checked){
+    if(calc3.partner.checked){
         weight += 100;
         count += 1;
         }
-	else if(calc3.partner[2].checked){
-        weight = 1100;
-        count = 10;
+    if(calc3.master.checked){
+        weight += 100;
+        count += 1;
     }
     if(calc3.vehicles[4].checked){
         weight = calc3.Uweight.value;
